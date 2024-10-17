@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合同会社Bambooホーム</title>
+    <style>
+        /* フレックスボックスの設定 */
+        .gallery {
+            display: flex;
+            justify-content: space-around; /* 画像間のスペースを均等に */
+            flex-wrap: wrap; /* 画面幅が狭い場合は自動的に折り返し */
+        }
+
+        figure {
+            margin: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  h1{
+    text-align: center;
+  }
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>合同会社Bamboo</h1>
+        <p>私たちのショップでは、在庫商品だけでなく、お客様のご要望に応じたオーダーメイドの洋服も提供しております。あなたの「欲しい」を叶えることをコンセプトに、世界に一つだけの特別なアイテムをお届けします。</p>
+        <p>※オーダー希望のお客様は下記お問い合わせフォームにてメールにてやり取りを行います。</p>
+        <h2>既製品商品ギャラリー</h2>
+        <p>弊社ではオーダー商品のみではなく、既製品も取り扱いしており、価格も他通販サイトと比べてお安くなっております。</p>
+    <div class="gallery">
+        <figure>
+            <img src="images/ue1.webp" alt="商品画像1">
+            <figcaption>管理No.200045<br>ワイヤー襟付きシャツ<br>2,700-（税込み）</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/ue2.webp" alt="商品画像2">
+            <figcaption>管理No.200013<br>3pac Tシャツ<br>1,900-（税込み）</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/ue3.webp" alt="商品画像3">
+            <figcaption>管理No.20001<br>vネックロングシャツ<br>2,200-（税込み）</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sita1.webp">
+            <figcaption>管理No.20002<br>ストレッチスキニー<br>3,800-（税込み）</figcaption>
+        </figure>
+        <figure>
+            <img src="images/sita2.webp">
+            <figcaption>管理No.10032<br>ストレッチデニム<br>4,200-（税込み）</figcaption>
+        </figure>
+    </div>
+    <h2>弊社が選ばれる理由</h2>
+    <p>弊社の強味は、オーダーにてご希望に応じたフォルムの洋服を作成できることです。作成までは、1着2週間ほどかかりますが、既製品もお取り扱いしておりますので、原則即購入も扱っております。</p>
+    <p>また、お客様との距離感を大切にしているため、サイズ感や色合い、好きなお洋服の系統からピックアップできますので、まずはお問い合わせからご連絡ください。</p>
+    <h3>会社概要</h3>
+    <p>代表社員　藍森　瑞紀</p>
+    <p>住所　東京都新宿区西新宿3-5-12　トーカン新宿第二キャステール411号</p>
+    <p>お問い合わせ番号　050-1722-7482</p>
+    <h3>お問い合わせフォーム</h3>
+    <form>
+        <div class="inputbox">
+            <label for="name">商品名</label>
+            <input type="text" id="name" value=""/>
+        </div>    
+        <div class="inputbox">
+            <label for="number">商品No</label>
+            <input type="number" id="number" value=""/>
+        </div>
+        <div class="inputbox">
+            <label for="yourname">お客様氏名</label>
+            <input placeholder="カナ" type="text" id="yourname" value=""/>
+        </div>
+        <div class="inputbox">
+            <label for="message">配送先住所</label>
+            <textarea id="from"></textarea>
+        </div>
+        <div class="inputbox">
+            <label for="mail">メールアドレス</label>
+            <input type="text" id="mail" value=""/>
+        </div>
+        <button type="button">送信</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
